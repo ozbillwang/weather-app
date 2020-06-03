@@ -15,7 +15,7 @@ node server.js
 # if it is exist, and make sure there is no other application taken the port 3000 on host.
 docker rm -f weather-app
 
-# start the application in container
+### start the application in container
 docker build -t weather-app . 
 docker run -d -p 3000:3000 -n weather-app weather-app 
 // Now open your browser and visit: localhost:3000
